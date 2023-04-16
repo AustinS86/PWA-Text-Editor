@@ -21,7 +21,7 @@ module.exports = () => {
       }),
       new InjectManifest({
         swSrc: "./src-sw.js",
-        swDest: "sw.js",
+        swDest: "./sw.js",
       }),
       new WebpackPwaManifest({
         name: "JATE Text Editor",

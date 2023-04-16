@@ -20,6 +20,19 @@ butInstall.addEventListener("click", async () => {
   butInstall.style.display = "none";
 });
 
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("/sw.js")
+    .then(() => {
+      console.log("Service worker registered successfully");
+    })
+    .catch((error) => {
+      console.error("Failed to register service worker:", error);
+    });
+} else {
+  console.error("Service workers are not supported in this browser.");
+}
+
 window.addEventListener("appinstalled", (event) => {
   console.log("App installed");
 });
