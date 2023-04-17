@@ -5,7 +5,7 @@ import "../css/style.css";
 
 const main = document.querySelector("#main");
 main.innerHTML = "";
-
+// This function is used to load the spinner
 const loadSpinner = () => {
   const spinner = document.createElement("div");
   spinner.classList.add("spinner");
@@ -16,13 +16,12 @@ const loadSpinner = () => {
   `;
   main.appendChild(spinner);
 };
-
+// This function is used to load the editor
 const editor = new Editor();
 
 if (typeof editor === "undefined") {
   loadSpinner();
 }
-
 // Check if service workers are supported
 if ("serviceWorker" in navigator) {
   // register workbox service worker

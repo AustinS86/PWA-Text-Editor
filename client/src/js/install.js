@@ -1,12 +1,12 @@
 const butInstall = document.getElementById("buttonInstall");
 let deferredPrompt;
-
+// This event is fired when the install prompt is shown
 window.addEventListener("beforeinstallprompt", (event) => {
   event.preventDefault();
   deferredPrompt = event;
   butInstall.style.display = "block";
 });
-
+// This event is fired when the user clicks on the install button
 butInstall.addEventListener("click", async () => {
   const promptResult = await deferredPrompt.choice;
   console.log(`User ${promptResult.outcome} the install prompt`);
@@ -32,7 +32,7 @@ if ("serviceWorker" in navigator) {
 } else {
   console.error("Service workers are not supported in this browser.");
 }
-
+// This event is fired when the app is installed
 window.addEventListener("appinstalled", (event) => {
   console.log("App installed");
 });
