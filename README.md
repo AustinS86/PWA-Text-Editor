@@ -39,6 +39,9 @@ You can now begin writing notes and code, which will be saved to your local data
 - [PWA-Text-Editor](https://guarded-anchorage-60540.herokuapp.com/)
 
 ## Screenshot
+![JATE Web Screenshot](https://user-images.githubusercontent.com/117120566/232590474-fa3dc6bc-88b4-49c1-b156-963ce675c06a.png)
+
+![JATE App Screenshot](https://user-images.githubusercontent.com/117120566/232590828-98fd2239-b3d9-4335-bd8d-bc0e8f23a57e.png)
 
 ## Questions
 
